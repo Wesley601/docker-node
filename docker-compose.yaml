@@ -12,6 +12,7 @@ services:
       - db
     volumes:
       - ./:/app
+      - /app/node_modules
   db:
     image: mysql:5.7
     command: --innodb-use-native-aio=0
